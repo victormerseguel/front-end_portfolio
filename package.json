@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "Portifólio web developer",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Merseguel",
+  "license": "ISC",
+  "type": "module"
+}
