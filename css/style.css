@@ -4,6 +4,8 @@
   --background-color: #f1f1f1;
   --color: #b3b3b3;
   --font-color: #3d3d3d;
+  --box-background: #f3f3f3c1;
+  --box-shadow: #dbdbdb;
 }
 
 * {
@@ -24,8 +26,6 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   height: 100vh;
-
-  border: 1px solid salmon;
 }
 
 /* INITIAL SCREEN */
@@ -64,7 +64,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
 }
 
 canvas,
@@ -81,11 +81,12 @@ canvas,
 nav {
   position: absolute;
   top: 0;
-  padding: 80px;
+  padding: 29px;
+  margin: 51px;
   background: linear-gradient(
-    165deg,
-    var(--background-color) 20%,
-    rgba(0, 0, 0, 0) 90%
+    130deg,
+    var(--background-color) 30%,
+    rgba(0, 0, 0, 0) 53%
   );
 }
 
@@ -115,6 +116,7 @@ nav li {
 
 nav a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -124,19 +126,20 @@ nav a:hover {
 nav span {
   font-size: 1.3rem;
   margin: -5px 0;
-  display: none;
+  /* display: none; */
 }
 
 .border {
-  z-index: 0;
+  z-index: -2;
 }
 
 /* THEME */
 .theme-container {
   position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
+  bottom: 0;
+  width: fit-content;
+  height: fit-content;
+  z-index: 0;
 }
 
 .theme {
@@ -149,13 +152,77 @@ nav span {
 }
 
 .theme p {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
 /* HOME */
-.home
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 340px;
+  height: 100%;
+  margin: auto;
+}
+
+#home p {
+  background-color: var(--box-background);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 5px var(--box-shadow);
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+/* PROJECTS */
+#projects {
+  max-width: 1000px;
+  height: calc(100vh - 300px);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 300px;
+  overflow: scroll;
+}
+
+#projects h2,
+#projects h3,
+#projects p {
+  width: 100%;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#projects p {
+  max-width: 450px;
+  margin-bottom: 50px;
+}
+
+#projects h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project {
+  max-width: 400px;
+  cursor: pointer;
+  background-color: rgb(160, 217, 160);
+  border: 1px solid red;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.project img {
+  width: 100%;
+}
 
 /* HIDE ITEMS */
 .hide {
-  display: none;
+  display: none !important;
 }
