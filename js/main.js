@@ -1,5 +1,5 @@
 import { sketch } from "./sketch.js";
-import { navigate } from "./events.js";
+import { navigate, closeProjetMore } from "./events.js";
 
 const title = document.querySelector(".title-mask");
 const mask = document.querySelector(".mask");
@@ -25,3 +25,4 @@ setTimeout(() => {
 }, 3500);
 
 navigate();
+closeProjetMore();

@@ -11,6 +11,11 @@ const darkBtnSpan = document.querySelector("#dark span");
 // sections
 const sections = document.querySelectorAll(".section");
 
+// projects
+const projectMoreContainer = document.querySelector(".project-more-container");
+const projectMoreContent = document.querySelector(".project-more-content");
+const closeBtn = document.querySelector(".project-more-close");
+
 let theme = true;
 
 const states = [
@@ -66,4 +71,14 @@ export const navigate = () => {
   darkBtn.addEventListener("click", (e) => handleTheme(e));
 };
 
-export const clickInitial = () => buttons[0].click();
+export const closeProjetMore = () => {
+  projectMoreContent.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+  closeBtn.addEventListener("click", (e) => {
+    projectMoreContainer.classList.add("hide");
+  });
+  projectMoreContainer.addEventListener("click", (e) => {
+    projectMoreContainer.classList.add("hide");
+  });
+};

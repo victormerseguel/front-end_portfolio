@@ -5,7 +5,8 @@
   --color: #b3b3b3;
   --font-color: #3d3d3d;
   --box-background: #f3f3f3c1;
-  --box-shadow: #dbdbdb;
+  --box-shadow: 0px 0px 25px 5px #dbdbdb;
+  --link: rgb(48, 132, 192);
 }
 
 * {
@@ -88,6 +89,7 @@ nav {
     var(--background-color) 30%,
     rgba(0, 0, 0, 0) 53%
   );
+  z-index: 2;
 }
 
 nav h2 {
@@ -158,6 +160,14 @@ nav span {
 }
 
 /* HOME */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--box-background);
+}
+
 #home {
   display: flex;
   align-items: center;
@@ -168,25 +178,45 @@ nav span {
 }
 
 #home p {
-  background-color: var(--box-background);
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 25px 5px var(--box-shadow);
   font-weight: 400;
   line-height: 2.5rem;
 }
 
+.saiba-mais {
+  text-align: center;
+}
+
+.saiba-mais span {
+  color: var(--link);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* PROJECTS */
 #projects {
-  max-width: 1000px;
-  height: calc(100vh - 300px);
+  max-width: 998px;
+  height: calc(100vh - var(--margin-projects));
   padding: 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 300px;
+  top: var(--margin-projects);
+  --margin-projects: 190px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
   overflow: scroll;
+}
+
+.projects-header {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color);
 }
 
 #projects h2,
@@ -201,25 +231,156 @@ nav span {
 }
 #projects p {
   max-width: 450px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--box-background);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  font-weight: 400;
+  line-height: 2.5rem;
 }
 
 #projects h3 {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .project {
   max-width: 400px;
   cursor: pointer;
-  background-color: rgb(160, 217, 160);
-  border: 1px solid red;
+  background-color: var(--background-color);
   border-radius: 15px;
   margin: 5px;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
 }
 
 .project img {
   width: 100%;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.project:hover img {
+  opacity: 1;
+}
+
+.project p {
+  text-align: center;
+  border-radius: 0 !important;
+  background-color: var(--font-color) !important;
+  color: var(--background-color);
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  font-weight: 300 !important;
+  box-shadow: none !important;
+}
+
+/* PROJECT MORE */
+.project-more-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.project-more-content {
+  max-width: 900px;
+  height: auto;
+  max-height: 80vh;
+  background-color: var(--font-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-more-container video {
+  max-width: 450px;
+  height: max-content;
+  margin-top: 5px;
+}
+
+.project-more-buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.project-more-buttons button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  opacity: 0.9;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+}
+
+.project-more-buttons button:hover {
+  opacity: 1;
+}
+
+.project-more-buttons img {
+  width: 20px;
+}
+
+.project-more-content h4,
+.project-more-content p {
+  color: var(--background-color);
+  line-height: 1.8rem;
+}
+
+.project-more-content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.project-more-content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-more-content .right {
+  position: relative;
+
+  overflow: scroll;
+}
+
+.project-more-content .right span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color);
+  cursor: pointer;
 }
 
 /* HIDE ITEMS */
