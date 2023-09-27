@@ -2,6 +2,9 @@
 const buttons = document.querySelectorAll("nav li a");
 const dots = document.querySelectorAll("nav li span");
 
+// home
+const saibaMaisBtn = document.querySelector(".saiba-mais");
+
 // theme buttons
 const lightBtn = document.querySelector("#light");
 const lightBtnSpan = document.querySelector("#light span");
@@ -15,6 +18,9 @@ const sections = document.querySelectorAll(".section");
 const projectMoreContainer = document.querySelector(".project-more-container");
 const projectMoreContent = document.querySelector(".project-more-content");
 const closeBtn = document.querySelector(".project-more-close");
+const video = document.querySelector(".project-more-content video");
+
+const projects = document.querySelectorAll(".project");
 
 let theme = true;
 
@@ -67,18 +73,36 @@ export const navigate = () => {
     button.addEventListener("click", (e) => handleNav(e));
   });
 
+  saibaMaisBtn.addEventListener("click", () => {
+    buttons[2].click();
+  });
+
   lightBtn.addEventListener("click", (e) => handleTheme(e));
   darkBtn.addEventListener("click", (e) => handleTheme(e));
+
+  projects.forEach((project) => {
+    project.addEventListener("click", (e) => {
+      console.log(e);
+      projectMoreContainer.classList.remove("hide");
+      video.play();
+    });
+  });
 };
 
 export const closeProjetMore = () => {
   projectMoreContent.addEventListener("click", (e) => {
     e.stopPropagation();
   });
+
   closeBtn.addEventListener("click", (e) => {
     projectMoreContainer.classList.add("hide");
+    video.pause();
+    video.currentTime = 0;
   });
+
   projectMoreContainer.addEventListener("click", (e) => {
     projectMoreContainer.classList.add("hide");
+    video.pause();
+    video.currentTime = 0;
   });
 };
