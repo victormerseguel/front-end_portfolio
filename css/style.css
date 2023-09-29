@@ -54,8 +54,7 @@ body {
 }
 
 /* CANVAS */
-.background,
-.border {
+.background {
   width: 100%;
   height: 100%;
   padding: 50px;
@@ -68,8 +67,7 @@ body {
   z-index: -2;
 }
 
-canvas,
-.border span {
+canvas {
   width: 100%;
   max-width: 1000px;
   height: 100%;
@@ -131,12 +129,8 @@ nav span {
   /* display: none; */
 }
 
-.border {
-  z-index: -2;
-}
-
 /* THEME */
-.theme-container {
+.controls-container {
   position: absolute;
   bottom: 0;
   width: fit-content;
@@ -153,7 +147,17 @@ nav span {
   left: -30px;
 }
 
-.theme p {
+.language {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 25px;
+  right: 55px;
+  font-size: 0.85rem;
+}
+
+.theme p,
+.language p {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -194,7 +198,10 @@ nav span {
 }
 
 /* PROJECTS */
-#projects {
+#projects,
+#info,
+#contact {
+  width: 100%;
   max-width: 998px;
   height: calc(100vh - var(--margin-projects));
   padding: 50px;
@@ -225,11 +232,15 @@ nav span {
   width: 100%;
 }
 
-#projects h2 {
+#projects h2,
+#info h2,
+#contact h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-#projects p {
+#projects p,
+#info p,
+#contact p {
   max-width: 450px;
   margin: 0 auto;
   padding: 20px;
@@ -268,6 +279,10 @@ nav span {
   opacity: 1;
 }
 
+.project p img {
+  opacity: 1;
+}
+
 .project p {
   text-align: center;
   border-radius: 0 !important;
@@ -277,6 +292,21 @@ nav span {
   padding: 10px 0 !important;
   font-weight: 300 !important;
   box-shadow: none !important;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project p span {
+  align-self: center;
+  display: flex;
+  gap: 5px;
+}
+
+.project p img {
+  height: 20px;
 }
 
 /* PROJECT MORE */
@@ -286,11 +316,12 @@ nav span {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.47);
+  background-color: rgba(0, 0, 0, 0.808);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
+  cursor: zoom-out;
 }
 
 .project-more-content {
@@ -302,6 +333,7 @@ nav span {
   padding: 30px;
   display: flex;
   gap: 30px;
+  cursor: default;
 }
 
 .left {
@@ -369,11 +401,10 @@ nav span {
 
 .project-more-content .right {
   position: relative;
-
   overflow: scroll;
 }
 
-.project-more-content .right span {
+.project-more-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -383,7 +414,23 @@ nav span {
   cursor: pointer;
 }
 
+.project-more-close:hover {
+  color: #c63838;
+}
+
+/* INFO AND CONTACT */
+
+#info,
+#contact {
+  top: 0;
+  height: 100vh;
+}
+
 /* HIDE ITEMS */
 .hide {
+  display: none !important;
+}
+
+.hideLanguage {
   display: none !important;
 }

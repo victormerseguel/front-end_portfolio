@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victor Merseguel</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleDark.css" />
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
     <!-- RETIRAR STYLE-->
     <div class="mask hide">
-      <h1 class="title-mask">Victor Merseguel <span>Portfólio</span></h1>
+      <h1 class="title-mask">
+        Victor Merseguel <span>Desenvolvedor Front-End</span>
+      </h1>
     </div>
     <div class="container">
       <div class="background"><canvas></canvas></div>
-      <nav>
+      <nav class="light">
         <h2>Victor Merseguel</h2>
         <h3>Front-End Developer</h3>
         <ul>
           <li>
-            <a href="#" id="home-btn" class="hide">Home</a>
+            <a href="#" id="home-btn-pt" class="pt hide">Home</a>
+            <a href="#" id="home-btn-en" class="en hide">Home</a>
             <span class="dot">●</span>
           </li>
           <li>
-            <a href="#" id="projects-btn">Projetos</a
-            ><span class="dot hide">●</span>
+            <a href="#" id="projects-btn-pt" class="pt">Projetos</a>
+            <a href="#" id="projects-btn-en" class="en">Projetcs</a>
+            <span class="dot hide">●</span>
           </li>
           <li>
-            <a href="#" id="info-btn">Info</a><span class="dot hide">●</span>
+            <a href="#" id="info-btn-pt" class="pt">Info</a>
+            <a href="#" id="info-btn-en" class="en">Info</a>
+            <span class="dot hide">●</span>
           </li>
           <li>
-            <a href="#" id="contact-btn">Contact</a
-            ><span class="dot hide">●</span>
+            <a href="#" id="contact-btn-pt" class="pt">Contactos</a>
+            <a href="#" id="contact-btn-en" class="en">Contacts</a>
+            <span class="dot hide">●</span>
           </li>
         </ul>
       </nav>
-      <div class="border"><span></span></div>
+
       <main class="section" id="home">
         <div class="home-container">
           <p>
@@ -49,7 +57,8 @@
       </main>
       <section class="section hide" id="projects">
         <div class="projects-header">
-          <h2>Projetos</h2>
+          <h2 class="pt">Projetos</h2>
+          <h2 class="en">Projects</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             eaque exercitationem natus dignissimos quam quo repellat eligendi
@@ -62,49 +71,58 @@
           <h3>Destaques</h3>
           <div href="#" class="project">
             <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone - HTML, CSS, JS</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
+            <p>
+              iPhone 14 - Page Clone
+              <span class="project-icon">
+                <img src="./assets/img/html-icon.svg" alt="" />
+                <img src="./assets/img/css-icon.svg" alt="" />
+                <img src="./assets/img/javascript-icon.svg" alt="" />
+              </span>
+            </p>
           </div>
 
           <h3>Todos os Projetos</h3>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
-          <div href="#" class="project">
-            <img src="./assets/img/iphone14.jpg" alt="" />
-            <p>iPhone 14 page clone</p>
-          </div>
         </div>
       </section>
-      <section class="section hide" id="info"><h3>Informações</h3></section>
-      <section class="section hide" id="contact"><h3>Contatos</h3></section>
-      <div class="theme-container">
+
+      <section class="section hide" id="info">
+        <div class="info-container">
+          <h2 class="pt">Informações</h2>
+          <h2 class="en">Informations</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure
+            ea porro consequatur animi esse assumenda quasi suscipit obcaecati
+            repellendus aspernatur quod provident veritatis hic deleniti
+            similique aut numquam doloremque.
+          </p>
+        </div>
+      </section>
+
+      <section class="section hide" id="contact">
+        <div class="contact-container">
+          <h2 class="pt">Contactos</h2>
+          <h2 class="en">Contacts</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure
+            ea porro consequatur animi esse assumenda quasi suscipit obcaecati
+            repellendus aspernatur quod provident veritatis hic deleniti
+            similique aut numquam doloremque.
+          </p>
+        </div>
+      </section>
+
+      <div class="controlls-container">
         <div class="theme">
           <p id="light"><span>◼</span> Light</p>
           <p id="dark"><span>◻</span> Dark</p>
         </div>
+        <div class="language">
+          <p id="pt"><span id="pt">◼</span> PT</p>
+          <p id="en"><span id="en">◻</span> EN</p>
+        </div>
       </div>
     </div>
+
     <div class="project-more-container hide">
       <div class="project-more-content">
         <div class="left">
@@ -143,54 +161,7 @@
             Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
             impedit ab accusamus.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
-          </p>
+
           <span class="project-more-close">X</span>
         </div>
       </div>
