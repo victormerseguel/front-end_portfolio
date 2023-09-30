@@ -1,8 +1,8 @@
-export const highlights = [
+export const highlightsDB = [
   {
     title: "Portfólio Videomaker",
-    titleEn: this.title,
-    id: this.title,
+    titleEn: "Portfólio Videomaker",
+
     description: "",
     icons: {
       html: true,
@@ -10,15 +10,15 @@ export const highlights = [
       javascript: true,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
   },
   {
     title: "iPhone 14 - Page Clone",
-    titleEn: this.title,
-    id: this.title,
+    titleEn: "iPhone 14 - Page Clone",
+
     description: "",
     icons: {
       html: true,
@@ -34,7 +34,7 @@ export const highlights = [
   {
     title: "Página de Captura",
     titleEn: "Landing Page",
-    id: this.title,
+
     description: "",
     icons: {
       html: true,
@@ -42,7 +42,7 @@ export const highlights = [
       javascript: false,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
@@ -50,7 +50,6 @@ export const highlights = [
   {
     title: "Calculadora IMC em React",
     titleEn: "IMC Calculator in React",
-    id: this.title,
     description: "",
     icons: {
       html: true,
@@ -58,98 +57,98 @@ export const highlights = [
       javascript: false,
       react: true,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
   },
-  {
-    title: "QR Code Generator - API",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
+  // {
+  //   title: "QR Code Generator - API",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
 ];
 
-export const allProjects = [
-  {
-    title: "Instagram login - Page Clone",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "project-instagram.jpg",
-    projectURL: "",
-    githubURL: "https://github.com/victormerseguel/instagram_login_clone",
-    videoSRC: "",
-  },
-  {
-    title: "Quiz DEV",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
-  {
-    title: "Memories - Full Stack",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
-  {
-    title: "Countdown",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
+export const allProjectsDB = [
+  // {
+  //   title: "Instagram login - Page Clone",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "project-instagram.jpg",
+  //   projectURL: "",
+  //   githubURL: "https://github.com/victormerseguel/instagram_login_clone",
+  //   videoSRC: "",
+  // },
+  // {
+  //   title: "Quiz DEV",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
+  // {
+  //   title: "Memories - Full Stack",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
+  // {
+  //   title: "Countdown",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
   {
     title: "Gerador de Senhas",
     titleEn: "Password Generator",
-    id: this.title,
+
     description: "",
     icons: {
       html: true,
@@ -157,7 +156,7 @@ export const allProjects = [
       javascript: true,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
@@ -165,7 +164,7 @@ export const allProjects = [
   {
     title: "Gerador de QR Code",
     titleEn: "QR Code Generator",
-    id: this.title,
+
     description: "",
     icons: {
       html: true,
@@ -173,31 +172,31 @@ export const allProjects = [
       javascript: true,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
   },
-  {
-    title: "Party-Time",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
+  // {
+  //   title: "Party-Time",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
   {
     title: "Gerador de Box-Shadow",
     titleEn: "Box-Shadow Generator",
-    id: this.title,
+
     description: "",
     icons: {
       html: true,
@@ -205,31 +204,31 @@ export const allProjects = [
       javascript: true,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",
   },
-  {
-    title: "Advanced ToDo List - Local Storage",
-    titleEn: this.title,
-    id: this.title,
-    description: "",
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: false,
-    },
-    thumb: "",
-    projectURL: "",
-    githubURL: "",
-    videoSRC: "",
-  },
+  // {
+  //   title: "Advanced ToDo List - Local Storage",
+  //   titleEn: this.title,
+
+  //   description: "",
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: false,
+  //   },
+  //   thumb: "projet-iphone14.jpg",
+  //   projectURL: "",
+  //   githubURL: "",
+  //   videoSRC: "",
+  // },
   {
     title: "Calculadora IMC",
     titleEn: "IMC Calculator",
-    id: this.title,
+
     description: "",
     icons: {
       html: true,
@@ -237,7 +236,7 @@ export const allProjects = [
       javascript: true,
       react: false,
     },
-    thumb: "",
+    thumb: "projet-iphone14.jpg",
     projectURL: "",
     githubURL: "",
     videoSRC: "",

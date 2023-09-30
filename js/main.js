@@ -1,5 +1,6 @@
 import { sketch } from "./sketch.js";
 import { navigate, closeProjetMore } from "./events.js";
+import "./projects.js";
 
 const title = document.querySelector(".title-mask");
 const mask = document.querySelector(".mask");

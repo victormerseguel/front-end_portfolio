@@ -60,12 +60,12 @@ export const navigate = () => {
   ptBtn.addEventListener("click", (e) => handleLanguage(e));
   enBtn.addEventListener("click", (e) => handleLanguage(e));
 
-  projects.forEach((project) => {
-    project.addEventListener("click", (e) => {
-      projectMoreContainer.classList.remove("hide");
-      video.play();
-    });
-  });
+  // projects.forEach((project) => {
+  //   project.addEventListener("click", (e) => {
+  //     projectMoreContainer.classList.remove("hide");
+  //     video.play();
+  //   });
+  // });
 };
 
 const handleNav = (e) => {
