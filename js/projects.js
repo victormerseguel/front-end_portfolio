@@ -7,23 +7,24 @@ highlights.innerHTML = "";
 
 highlightsDB.forEach((project, i) => {
   `<div href="#" class="project" id="highlights">
-    <img src="` + project.thumb `alt={project.title} />
+    <img src=project.thumb alt=project.title />
     <p>
-      ` + project.title + `
+      project.title
+
       <span class="project-icon">
-        ` project.icons[0] ? (
+        project.icons[0] ? (
           <img src="./assets/img/html-icon.svg" alt="" />
-        ) : null}
-        {project.icons[1] ? (
+        ) : null
+        project.icons[1] ? (
           <img src="./assets/img/css-icon.svg" alt="" />
-        ) : null}
-        {project.icons[2] ? (
+        ) : null
+        project.icons[2] ? (
           <img src="./assets/img/javascript-icon.svg" alt="" />
-        ) : null}
-        {project.icons[3] ? (
+        ) : null
+        project.icons[3] ? (
           <img src="./assets/img/react-icon.svg" alt="" />
-        ) : null}
+        ) : null
       </span>
     </p>
-  </div>;
+  </div>;`;
 });
