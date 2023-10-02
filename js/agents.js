@@ -2,8 +2,14 @@ import { randomRange, context } from "./sketch.js";
 
 const root = document.querySelector(":root");
 
-const color = getComputedStyle(root).getPropertyValue("--color");
-const backColor = getComputedStyle(root).getPropertyValue("--background-color");
+let color;
+let backColor;
+
+const sketchColors = () => {
+  color = getComputedStyle(root).getPropertyValue("--color");
+  backColor = getComputedStyle(root).getPropertyValue("--background-color");
+};
+sketchColors();
 
 const speed = 0.7;
 
@@ -52,4 +58,4 @@ class Agent {
   }
 }
 
-export { Agent, color, backColor };
+export { Agent, color, backColor, sketchColors };

@@ -6,7 +6,7 @@
   --font-color: #3d3d3d;
   --box-background: #f3f3f3c1;
   --box-shadow: 0px 0px 25px 5px #dbdbdb;
-  --link: rgb(48, 132, 192);
+  --link: #3084c0;
 }
 
 * {
@@ -198,6 +198,7 @@ nav span {
 }
 
 /* PROJECTS */
+
 #projects,
 #info,
 #contact {
@@ -256,6 +257,14 @@ nav span {
   margin: 50px 0;
 }
 
+#highlights-container,
+#all-projects-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .project {
   max-width: 400px;
   cursor: pointer;
@@ -272,14 +281,10 @@ nav span {
 
 .project img {
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: all 0.3s;
 }
 .project:hover img {
-  opacity: 1;
-}
-
-.project p img {
   opacity: 1;
 }
 
@@ -287,7 +292,6 @@ nav span {
   text-align: center;
   border-radius: 0 !important;
   background-color: var(--font-color) !important;
-  color: var(--background-color);
   margin: 0 !important;
   padding: 10px 0 !important;
   font-weight: 300 !important;
@@ -299,13 +303,29 @@ nav span {
   gap: 20px;
 }
 
-.project p span {
+.project-lable p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px !important;
+  gap: 5px;
+}
+
+.title-highlights,
+.title-all {
+  color: var(--background-color) !important;
+  line-height: 1rem;
+}
+
+.project-icon {
   align-self: center;
   display: flex;
   gap: 5px;
 }
 
-.project p img {
+.project-icon img {
+  opacity: 1;
   height: 20px;
 }
 
@@ -342,13 +362,14 @@ nav span {
   flex-direction: column;
 }
 
-.project-more-container video {
+#img-cover {
   max-width: 450px;
   height: max-content;
   margin-top: 5px;
+  border-radius: 8px;
 }
 
-.project-more-buttons {
+#project-more-buttons {
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -356,7 +377,7 @@ nav span {
   margin-top: 30px;
 }
 
-.project-more-buttons button {
+#project-more-buttons button {
   padding: 10px 15px;
   border-radius: 8px;
   border: none;
@@ -365,19 +386,24 @@ nav span {
   font-weight: 500;
   opacity: 0.9;
   cursor: pointer;
+}
+
+#project-more-buttons button:hover {
+  opacity: 1;
+}
+
+#project-more-buttons img {
+  width: 20px;
+  color: var(--font-color);
+}
+
+#project-more-buttons button a {
+  text-decoration: none;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
   align-self: start;
-}
-
-.project-more-buttons button:hover {
-  opacity: 1;
-}
-
-.project-more-buttons img {
-  width: 20px;
 }
 
 .project-more-content h4,
@@ -390,6 +416,8 @@ nav span {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1.4rem;
+  text-align: center;
+  padding-right: 30px;
 }
 
 .project-more-content p {

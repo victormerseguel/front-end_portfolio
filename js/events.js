@@ -1,3 +1,6 @@
+import { titleChange } from "./projects.js";
+import { handleTheme } from "./theme.js";
+
 // INSTANCES --------------------------------------------
 
 // nav buttons
@@ -9,9 +12,7 @@ const saibaMaisBtn = document.querySelector(".saiba-mais");
 
 // theme buttons
 const lightBtn = document.querySelector("#light");
-const lightBtnSpan = document.querySelector("#light span");
 const darkBtn = document.querySelector("#dark");
-const darkBtnSpan = document.querySelector("#dark span");
 
 // language buttons
 const ptBtn = document.querySelector("#pt");
@@ -31,8 +32,8 @@ const video = document.querySelector(".project-more-content video");
 const projects = document.querySelectorAll(".project");
 
 // VARIABLES --------------------------------------------
-let theme = true;
-let language = "-pt";
+// let theme = true;
+export let language = "-pt";
 let current = "";
 
 // prettier-ignore
@@ -98,14 +99,10 @@ export const closeProjetMore = () => {
 
   closeBtn.addEventListener("click", (e) => {
     projectMoreContainer.classList.add("hide");
-    video.pause();
-    video.currentTime = 0;
   });
 
   projectMoreContainer.addEventListener("click", (e) => {
     projectMoreContainer.classList.add("hide");
-    video.pause();
-    video.currentTime = 0;
   });
 };
 
@@ -150,23 +147,5 @@ const handleLanguage = (e) => {
   });
 
   languageSelection();
-};
-
-// THEME --------------------------------------------------
-const handleTheme = (e) => {
-  e.target.id === "light"
-    ? ((theme = true),
-      document.querySelectorAll(".dark").forEach((item) => {
-        item.classList.add("light");
-        item.classList.remove("dark");
-      }),
-      (lightBtnSpan.innerText = "◼"),
-      (darkBtnSpan.innerText = "◻"))
-    : ((theme = false),
-      document.querySelectorAll(".light").forEach((item) => {
-        item.classList.add("dark");
-        item.classList.remove("light");
-      }),
-      (lightBtnSpan.innerText = "◻"),
-      (darkBtnSpan.innerText = "◼"));
+  titleChange();
 };

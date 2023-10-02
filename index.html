@@ -44,7 +44,7 @@
         </ul>
       </nav>
 
-      <main class="section" id="home">
+      <main class="section hide" id="home">
         <div class="home-container">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iure
@@ -55,7 +55,7 @@
           <p class="saiba-mais"><span>Saiba mais</span></p>
         </div>
       </main>
-      <section class="section hide" id="projects">
+      <section class="section" id="projects">
         <div class="projects-header">
           <h2 class="pt">Projetos</h2>
           <h2 class="en">Projects</h2>
@@ -69,20 +69,24 @@
 
         <div class="projects-container">
           <h3>Destaques</h3>
-          <div href="#" class="project" id="highlights">
-            <img src="./assets/img/project-iphone14.jpg" alt="" />
-            <p>
-              iPhone 14 - Page Clone
-              <span class="project-icon">
-                <img src="./assets/img/html-icon.svg" alt="" />
-                <img src="./assets/img/css-icon.svg" alt="" />
-                <img src="./assets/img/javascript-icon.svg" alt="" />
-              </span>
-            </p>
+          <div id="highlights-container">
+            <div href="#" class="project" id="highlights">
+              <img src="./assets/img/project-iphone14.jpg" alt="" />
+              <p>
+                iPhone 14 - Page Clone
+                <span class="project-icon">
+                  <img src="./assets/img/html-icon.svg" alt="" />
+                  <img src="./assets/img/css-icon.svg" alt="" />
+                  <img src="./assets/img/javascript-icon.svg" alt="" />
+                </span>
+              </p>
+            </div>
           </div>
 
           <h3>Todos os Projetos</h3>
-          <div class="project" id="all-projects"></div>
+          <div id="all-projects-container">
+            <div class="project" id="all-projects"></div>
+          </div>
         </div>
       </section>
 
@@ -127,14 +131,19 @@
     <div class="project-more-container hide">
       <div class="project-more-content">
         <div class="left">
-          <video src="" autoplay controls loop muted></video>
-          <div class="project-more-buttons">
+          <img id="img-cover" src="" alt="" />
+          <div id="project-more-buttons">
             <button>
-              <img src="./assets/img/view-icon.svg" alt="" />Visualizar projeto
+              <a href="" target="_blank"
+                ><img src="./assets/img/view-icon.svg" alt="" />Visualizar
+                projeto</a
+              >
             </button>
             <button>
-              <img src="./assets/img/github-icon.svg" alt="" />Acessar
-              repositório
+              <a href="" target="_blank">
+                <img src="./assets/img/github-icon.svg" alt="" />Acessar
+                repositório
+              </a>
             </button>
           </div>
         </div>
@@ -149,12 +158,6 @@
             id voluptates exercitationem numquam impedit vero necessitatibus
             porro dolores commodi amet sapiente fugit, aliquid illum quam quas
             delectus! Tempora.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            labore et necessitatibus harum esse illum deserunt pariatur vero?
-            Aliquid, ipsum. Laboriosam omnis eum delectus dolores quidem, non
-            impedit ab accusamus.
           </p>
 
           <span class="project-more-close">X</span>
