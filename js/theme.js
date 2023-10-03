@@ -29,6 +29,8 @@ export const handleTheme = (e) => {
 };
 
 const root = document.querySelector(":root");
+const githubIcon = document.querySelector("#git");
+const viewIcon = document.querySelector("#view");
 
 const lightTheme = () => {
   root.style.setProperty("--background-color", "#f1f1f1");
@@ -40,17 +42,10 @@ const lightTheme = () => {
 };
 
 const darkTheme = () => {
-  root.style.setProperty("--background-color", "#3d3d3d");
-  root.style.setProperty("--color", "#f3f3f3");
-  root.style.setProperty("--font-color", "#f1f1f1");
-  root.style.setProperty("--box-background", "#b3b3b3");
-  root.style.setProperty("--box-shadow", "0px 0px 15px 5px #323232c1");
+  root.style.setProperty("--background-color", "#1b1b1b");
+  root.style.setProperty("--color", "#494949");
+  root.style.setProperty("--font-color", "#c8c8c8");
+  root.style.setProperty("--box-background", "#454545c1");
+  root.style.setProperty("--box-shadow", "0px 0px 15px 5px #121212");
   root.style.setProperty("--link", "#3084c0");
 };
-
-// --background-color: #f1f1f1;
-// --color: #b3b3b3;
-// --font-color: #3d3d3d;
-// --box-background: #f3f3f3c1;
-// --box-shadow: 0px 0px 25px 5px #dbdbdb;
-// --link: #3084c0;

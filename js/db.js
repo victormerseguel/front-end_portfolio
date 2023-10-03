@@ -1,7 +1,7 @@
 export const highlightsDB = [
   {
     title: "Portfólio Videomaker",
-    titleEn: "Portfolio Videomaker",
+    titleEn: "Videomaker Portfolio",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore doloremque recusandae tenetur eaque totam, voluptate voluptatibus est minima, laborum nesciunt aut error cumque praesentium explicabo debitis dicta similique, velit corporis",
     descriptionEn: "Descrição em inglês",
@@ -11,7 +11,7 @@ export const highlightsDB = [
       javascript: true,
       react: false,
     },
-    thumb: "project-iphone14.jpg",
+    thumb: "project-portfolio.jpg",
     projectURL: "https://google.com",
     githubURL: "https://uol.com.br",
     videoSRC: "",

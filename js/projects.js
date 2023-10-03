@@ -76,10 +76,10 @@ allProjectsDB.forEach((project) => {
     </div>`;
 });
 
-const titlesHighlights = document.querySelectorAll(".title-highlights");
-const titlesAll = document.querySelectorAll(".title-all");
-
 export const titleChange = () => {
+  const titlesHighlights = document.querySelectorAll(".title-highlights");
+  const titlesAll = document.querySelectorAll(".title-all");
+
   language === "-pt"
     ? (titlesHighlights.forEach((title, i) => {
         title.innerText = highlightsDB[i].title;
@@ -87,12 +87,12 @@ export const titleChange = () => {
       titlesAll.forEach((title, i) => {
         title.innerText = allProjectsDB[i].title;
       }))
-    : titlesHighlights.forEach((title, i) => {
+    : (titlesHighlights.forEach((title, i) => {
         title.innerText = highlightsDB[i].titleEn;
-      });
-  titlesAll.forEach((title, i) => {
-    title.innerText = allProjectsDB[i].titleEn;
-  });
+      }),
+      titlesAll.forEach((title, i) => {
+        title.innerText = allProjectsDB[i].titleEn;
+      }));
 };
 
 highlights.innerHTML = highlightsText;
@@ -111,15 +111,11 @@ projects.forEach((project, i) => {
 });
 
 const moreProject = () => {
-  // containerProject.classList.remove("hide");
-
   projects.forEach((project, i) => {
     project.addEventListener("click", (e) => {
       containerProject.classList.remove("hide");
       let db;
       let index;
-      const view = '<img src="./assets/img/view-icon.svg" alt="" />';
-      const github = '<img src="./assets/img/github-icon.svg" alt="" />';
 
       e.currentTarget.id <= highlightsDB.length
         ? ((index = i), (db = highlightsDB))
@@ -141,20 +137,47 @@ const moreProject = () => {
             db[index].description),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(1) a"
-          ).innerHTML = view + "Visualizar Projeto"),
+          ).innerHTML = "Visualizar Projeto"),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(2) a"
-          ).innerHTML = github + "Acessar repositório"))
+          ).innerHTML = "Acessar repositório"))
         : ((document.querySelector(".right h4").innerText = db[index].titleEn),
           (document.querySelector(".right p").innerText =
             db[index].descriptionEn),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(1) a"
-          ).innerHTML = view + "View Project"),
+          ).innerHTML = "View Project"),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(2) a"
-          ).innerHTML = github + "Access repository"));
+          ).innerHTML = "Access repository"));
     });
   });
 };
 moreProject();
+
+const moreClick = () => {
+  const viewProject = document.querySelector(
+    "#project-more-buttons button:nth-of-type(1) a"
+  );
+  const viewButton = document.querySelector(
+    "#project-more-buttons button:nth-of-type(1)"
+  );
+  const gitProject = document.querySelector(
+    "#project-more-buttons button:nth-of-type(2) a"
+  );
+  const gitButton = document.querySelector(
+    "#project-more-buttons button:nth-of-type(2)"
+  );
+  const imageThumb = document.getElementById("img-cover");
+
+  imageThumb.addEventListener("click", (e) => {
+    viewProject.click();
+  });
+  viewButton.addEventListener("click", (e) => {
+    viewProject.click();
+  });
+  gitButton.addEventListener("click", (e) => {
+    gitProject.click();
+  });
+};
+moreClick();

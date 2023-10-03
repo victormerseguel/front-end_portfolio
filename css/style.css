@@ -32,7 +32,7 @@ body {
 /* INITIAL SCREEN */
 .mask {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -267,6 +267,7 @@ nav span {
 
 .project {
   max-width: 400px;
+  height: max-content;
   cursor: pointer;
   background-color: var(--background-color);
   border-radius: 15px;
@@ -280,7 +281,7 @@ nav span {
 }
 
 .project img {
-  width: 100%;
+  /* width: ; */
   opacity: 0.8;
   transition: all 0.3s;
 }
@@ -367,6 +368,7 @@ nav span {
   height: max-content;
   margin-top: 5px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 #project-more-buttons {
@@ -386,24 +388,23 @@ nav span {
   font-weight: 500;
   opacity: 0.9;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 42px;
 }
 
 #project-more-buttons button:hover {
   opacity: 1;
 }
 
-#project-more-buttons img {
-  width: 20px;
-  color: var(--font-color);
-}
-
 #project-more-buttons button a {
   text-decoration: none;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  align-self: start;
+  /* align-self: center; */
+}
+
+.more-icons {
+  fill: var(--font-color);
 }
 
 .project-more-content h4,

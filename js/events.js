@@ -52,7 +52,7 @@ export const navigate = () => {
   });
 
   saibaMaisBtn.addEventListener("click", () => {
-    buttons[2].click();
+    language === "-pt" ? buttons[4].click() : buttons[5].click();
   });
 
   lightBtn.addEventListener("click", (e) => handleTheme(e));
@@ -60,13 +60,6 @@ export const navigate = () => {
 
   ptBtn.addEventListener("click", (e) => handleLanguage(e));
   enBtn.addEventListener("click", (e) => handleLanguage(e));
-
-  // projects.forEach((project) => {
-  //   project.addEventListener("click", (e) => {
-  //     projectMoreContainer.classList.remove("hide");
-  //     video.play();
-  //   });
-  // });
 };
 
 const handleNav = (e) => {

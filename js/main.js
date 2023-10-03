@@ -20,7 +20,7 @@ setTimeout(() => {
   setTimeout(() => {
     mask.style.opacity = "0";
   }, 1000);
-}, 1500);
+}, 2000);
 setTimeout(() => {
   mask.style.display = "none";
 }, 3500);
