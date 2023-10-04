@@ -1,3 +1,5 @@
+const prefix = "http://127.0.0.1:5500/";
+
 export const highlightsDB = [
   {
     title: "Portfólio Videomaker",
@@ -13,7 +15,7 @@ export const highlightsDB = [
     },
     thumb: "project-portfolio.jpg",
     projectURL: "https://google.com",
-    githubURL: "https://uol.com.br",
+    githubURL: "https://github.com/victormerseguel/victor-portfolio",
     videoSRC: "",
   },
   {
@@ -29,13 +31,12 @@ export const highlightsDB = [
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/iphone14_clone",
     videoSRC: "",
   },
   {
     title: "Página de Captura",
     titleEn: "Landing Page",
-
     description: "",
     descriptionEn: "",
     icons: {
@@ -44,9 +45,9 @@ export const highlightsDB = [
       javascript: false,
       react: false,
     },
-    thumb: "project-iphone14.jpg",
-    projectURL: "",
-    githubURL: "",
+    thumb: "project-fabuloso.jpg",
+    projectURL: prefix + "projects/o-fabuloso-mundo/index.html",
+    githubURL: "https://github.com/victormerseguel/o-fabuloso-mundo",
     videoSRC: "",
   },
   {
@@ -57,20 +58,20 @@ export const highlightsDB = [
     icons: {
       html: true,
       css: true,
-      javascript: false,
+      javascript: true,
       react: true,
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/imc_calculator_react",
     videoSRC: "",
   },
 ];
 
 export const allProjectsDB = [
   {
-    title: "Instagram login - Page Clone",
-    titleEn: "Instagram login - Page Clone",
+    title: "Login do Instagram - Page Clone",
+    titleEn: "Instagram Login - Page Clone",
     description: "",
     descriptionEn: "",
     icons: {
@@ -92,12 +93,12 @@ export const allProjectsDB = [
     icons: {
       html: true,
       css: true,
-      javascript: false,
+      javascript: true,
       react: true,
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/quiz_app_react",
     videoSRC: "",
   },
   {
@@ -109,11 +110,11 @@ export const allProjectsDB = [
       html: true,
       css: true,
       javascript: true,
-      react: false,
+      react: true,
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/memories_fullstack",
     videoSRC: "",
   },
   {
@@ -125,11 +126,11 @@ export const allProjectsDB = [
       html: true,
       css: true,
       javascript: true,
-      react: false,
+      react: true,
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/countdown_react",
     videoSRC: "",
   },
   {
@@ -162,7 +163,7 @@ export const allProjectsDB = [
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/password-generator",
     videoSRC: "",
   },
   {
@@ -174,11 +175,11 @@ export const allProjectsDB = [
       html: true,
       css: true,
       javascript: true,
-      react: false,
+      react: true,
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/party_time",
     videoSRC: "",
   },
   {
@@ -195,7 +196,7 @@ export const allProjectsDB = [
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/box-shadow_generator",
     videoSRC: "",
   },
   {
@@ -211,7 +212,8 @@ export const allProjectsDB = [
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL:
+      "https://github.com/victormerseguel/advanced_todo_list_localstorage",
     videoSRC: "",
   },
   {
@@ -227,7 +229,7 @@ export const allProjectsDB = [
     },
     thumb: "project-iphone14.jpg",
     projectURL: "",
-    githubURL: "",
+    githubURL: "https://github.com/victormerseguel/imc_calculator_js",
     videoSRC: "",
   },
 ];
