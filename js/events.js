@@ -34,10 +34,10 @@ const projects = document.querySelectorAll(".project");
 // VARIABLES --------------------------------------------
 // let theme = true;
 export let language = "-pt";
-let current = "";
+export let current = "";
 
 // prettier-ignore
-const states = [
+export const states = [
   { name: "home", status: true },
   { name: "projects", status: false },
   { name: "info", status: false },
@@ -66,21 +66,48 @@ const handleNav = (e) => {
   const id = e.target.id;
 
   states.forEach((state, ind) => {
-    state.name + "-btn" + language === id
-      ? (sections[ind].classList.remove("hide"),
-        buttons.forEach((button, i) => {
-          button.id === id
-            ? (button.classList.add("hide"),
-              button.classList.add("current"),
-              dots.forEach((dot) => {
-                dot.classList.add("hide");
-              }),
-              dots[parseInt(i / 2)].classList.remove("hide"),
-              dots[parseInt(i / 2)].classList.remove("current"))
-            : (button.classList.remove("hide"),
-              button.classList.remove("current"));
-        }))
-      : sections[ind].classList.add("hide");
+    if (state.name + "-btn" + language === id) {
+      state.status = true;
+      sections[ind].classList.remove("hide");
+      buttons.forEach((button, i) => {
+        if (button.id === id) {
+          button.classList.add("hide");
+          button.classList.add("current");
+          dots.forEach((dot) => {
+            dot.classList.add("hide");
+          });
+          dots[parseInt(i / 2)].classList.remove("hide");
+          dots[parseInt(i / 2)].classList.remove("current");
+        } else {
+          button.classList.remove("hide");
+          button.classList.remove("current");
+        }
+      });
+    } else {
+      state.status = false;
+      sections[ind].classList.add("hide");
+    }
+  });
+};
+
+export const updateNav = () => {
+  buttons.forEach((button) => {
+    button.id.includes(language)
+      ? button.classList.remove("hide")
+      : button.classList.add("hide");
+  });
+  dots.forEach((dot) => {
+    dot.classList.add("hide");
+  });
+  states.forEach((state, i) => {
+    if (state.status) {
+      dots[i].classList.remove("hide");
+      buttons.forEach((button) => {
+        if (button.id.includes(state.name) && button.id.includes(language)) {
+          button.classList.add("hide");
+        }
+      });
+    }
   });
 };
 
@@ -117,7 +144,8 @@ const languageSelection = () => {
 };
 
 languageSelection();
-const handleLanguage = (e) => {
+
+export const handleLanguage = (e) => {
   let currentButton = document.querySelector(".current");
   let currentSliced;
 

@@ -6,7 +6,7 @@
 }
 
 .header {
-  background-image: url("./assets/images/background1.jpg");
+  background-image: url("../assets/images/background1.jpg");
   width: 100%;
   padding-top: 100px;
   padding-bottom: 40px;
@@ -120,7 +120,7 @@
 /* PRA QUEM */
 
 .bg__PraQuem {
-  background: url("./assets/images/background5.jpg");
+  background: url("../assets/images/background5.jpg");
   background-size: cover;
   width: 100%;
   justify-content: center;
@@ -139,7 +139,7 @@
 
 .bg__Papel__PraQuem {
   max-width: 1040px;
-  background: url("./assets/images/papel-fundo4.png") no-repeat center;
+  background: url("../assets/images/papel-fundo4.png") no-repeat center;
   background-size: contain;
   height: 407px;
   display: flex;
@@ -162,7 +162,7 @@
 }
 
 .ul {
-  list-style-image: url("./assets/images/check.png");
+  list-style-image: url("../assets/images/check.png");
   font-size: 11pt;
   line-height: 12pt;
   text-align: left;
@@ -209,7 +209,7 @@
 /* CONTEÚDE DAS AULAS */
 
 .conteudoAulas {
-  background-image: url("./assets/images/background2.jpg");
+  background-image: url("../assets/images/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -234,7 +234,7 @@
 }
 
 .aula1 {
-  background-image: url("./assets/images/papel-fundo1.png");
+  background-image: url("../assets/images/papel-fundo1.png");
   background-repeat: no-repeat;
   width: 334px;
   height: 320px;
@@ -243,7 +243,7 @@
 }
 
 .aula2 {
-  background-image: url("./assets/images/papel-fundo1.png");
+  background-image: url("../assets/images/papel-fundo1.png");
   background-repeat: no-repeat;
   width: 334px;
   height: 320px;
@@ -252,7 +252,7 @@
 }
 
 .aula3 {
-  background-image: url("./assets/images/papel-fundo1.png");
+  background-image: url("../assets/images/papel-fundo1.png");
   background-repeat: no-repeat;
   width: 334px;
   height: 320px;
@@ -377,7 +377,7 @@
 /* SOBRE */
 
 .sobre {
-  background-image: url("./assets/images/background3.jpg");
+  background-image: url("../assets/images/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -404,7 +404,7 @@
 }
 
 .textoSobre {
-  background-image: url("./assets/images/papel-fundo3.png");
+  background-image: url("../assets/images/papel-fundo3.png");
   background-size: 120%;
   background-repeat: no-repeat;
   width: 630px;
@@ -444,7 +444,7 @@
   }
 
   .textoSobre {
-    background-image: url("./assets/images/papel-fundo3.png");
+    background-image: url("../assets/images/papel-fundo3.png");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -470,7 +470,7 @@
 
 .footer {
   width: 100%;
-  background-image: url("./assets/images/background1.jpg");
+  background-image: url("../assets/images/background1.jpg");
   display: flex;
 }
 

@@ -29,8 +29,6 @@ export const handleTheme = (e) => {
 };
 
 const root = document.querySelector(":root");
-const githubIcon = document.querySelector("#git");
-const viewIcon = document.querySelector("#view");
 
 const lightTheme = () => {
   root.style.setProperty("--background-color", "#f1f1f1");

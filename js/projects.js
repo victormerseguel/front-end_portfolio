@@ -1,4 +1,4 @@
-import { allProjectsDB, highlightsDB } from "./db.js";
+import { allProjectsDB, highlightsDB } from "../data/db.js";
 import { language } from "./events.js";
 
 const highlights = document.querySelector("#highlights-container");
@@ -133,7 +133,7 @@ const moreProject = () => {
 
       language === "-pt"
         ? ((document.querySelector(".right h4").innerText = db[index].title),
-          (document.querySelector(".right p").innerText =
+          (document.querySelector(".right p").innerHTML =
             db[index].description),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(1) a"
@@ -142,7 +142,7 @@ const moreProject = () => {
             "#project-more-buttons button:nth-of-type(2) a"
           ).innerHTML = "Acessar repositório"))
         : ((document.querySelector(".right h4").innerText = db[index].titleEn),
-          (document.querySelector(".right p").innerText =
+          (document.querySelector(".right p").innerHTML =
             db[index].descriptionEn),
           (document.querySelector(
             "#project-more-buttons button:nth-of-type(1) a"
