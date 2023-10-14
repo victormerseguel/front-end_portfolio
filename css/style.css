@@ -158,6 +158,8 @@ nav h2 {
 nav h3 {
   font-size: 0.9rem;
   font-weight: 300;
+  display: flex;
+  gap: 5px;
 }
 
 nav ul,
