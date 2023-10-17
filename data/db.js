@@ -1,4 +1,4 @@
-const prefix = "http://127.0.0.1:5500/projects/";
+const prefix = "https://victormerseguel.com/projects/";
 
 const highlightsDB = [
   {
