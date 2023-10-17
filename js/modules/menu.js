@@ -2,7 +2,7 @@ import { closeButtonHTML, buttonsHTML, ulHTML } from "../../data/innerHtml.js";
 import { states, language, updateNav } from "./events.js";
 
 const nav = document.querySelector("nav ul");
-const buttons = document.querySelectorAll(".icons");
+const buttons = document.querySelectorAll("nav .icons");
 const menuBtn = document.querySelector("#nav-menu-icon");
 const container = document.querySelector(".sandwich-menu");
 

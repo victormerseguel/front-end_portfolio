@@ -17,8 +17,8 @@ const ulHTML = `
       <span class="dotSandwich hide">●</span>
     </li>
     <li>
-      <a href="#" id="info-btn-pt-mobile" class="">Infomações</a>
-      <a href="#" id="info-btn-en-mobile" class="">Information</a>
+      <a href="#" id="info-btn-pt-mobile" class="">Sobre mim</a>
+      <a href="#" id="info-btn-en-mobile" class="">About me</a>
       <span class="dotSandwich hide">●</span>
     </li>
     <li>

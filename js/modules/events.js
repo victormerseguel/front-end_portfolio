@@ -8,7 +8,8 @@ const buttons = document.querySelectorAll("nav li a ");
 const dots = document.querySelectorAll(".dot");
 
 // home
-const saibaMaisBtn = document.querySelector(".saiba-mais");
+const learnMoreBtn = document.querySelector("#home .learn-more");
+const letsTalkBtn = document.querySelector("#info .learn-more");
 
 // theme buttons
 const lightBtn = document.querySelector("#light");
@@ -51,8 +52,12 @@ export const navigate = () => {
     button.addEventListener("click", (e) => handleNav(e));
   });
 
-  saibaMaisBtn.addEventListener("click", () => {
+  learnMoreBtn.addEventListener("click", () => {
     language === "-pt" ? buttons[4].click() : buttons[5].click();
+  });
+
+  letsTalkBtn.addEventListener("click", () => {
+    language === "-pt" ? buttons[6].click() : buttons[7].click();
   });
 
   lightBtn.addEventListener("click", (e) => handleTheme(e));
@@ -170,3 +175,26 @@ export const handleLanguage = (e) => {
   languageSelection();
   titleChange();
 };
+
+// COPY MAIL -----------------------------------------------------------------
+const mailPt = document.querySelector(".mail span:nth-of-type(1)");
+const mailEn = document.querySelector(".mail span:nth-of-type(2)");
+const mail = "merseguel@gmail.com";
+
+const handleCopy = (e) => {
+  navigator.clipboard.writeText(mail);
+  e.target.innerText =
+    e.target.className === "pt"
+      ? "E-mail copiado para a área de transferência"
+      : "E-mail copied to clipboard";
+  e.target.classList.add("copied");
+  setTimeout(() => {
+    e.target.innerText = e.target.className.includes("pt")
+      ? "Clique para copiar"
+      : "Click to copy";
+    e.target.classList.remove("copied");
+  }, 1500);
+};
+
+mailPt.addEventListener("click", (e) => handleCopy(e));
+mailEn.addEventListener("click", (e) => handleCopy(e));
