@@ -1,30 +1,9 @@
-import { sketch } from "./sketch.js";
-import { navigate, closeProjetMore } from "./events.js";
-import "./projects.js";
-import "./menu.js";
-
-const title = document.querySelector(".title-mask");
-const mask = document.querySelector(".mask");
-
-// functions
-
-const animate = () => {
-  sketch();
-  requestAnimationFrame(animate);
-};
-
-animate();
+import { animate } from "./modules/sketch.js";
+import { navigate, closeProjetMore } from "./modules/events.js";
+import { initMask } from "./modules/mask.js";
 
 // Mask start
-setTimeout(() => {
-  title.style.opacity = "0";
-  setTimeout(() => {
-    mask.style.opacity = "0";
-  }, 1000);
-}, 2000);
-setTimeout(() => {
-  mask.style.display = "none";
-}, 3500);
-
+initMask();
+animate();
 navigate();
 closeProjetMore();
