@@ -134,7 +134,7 @@ const allProjectsDB = [
       react: false,
     },
     thumb: "project-instagram.jpg",
-    projectURL: prefix + "",
+    projectURL: prefix + "instagram-login",
     githubURL: "https://github.com/victormerseguel/instagram_login_clone",
   },
   {
@@ -174,27 +174,27 @@ const allProjectsDB = [
   //   githubURL: "https://github.com/victormerseguel/memories_fullstack",
   //   videoSRC: "",
   // },
-  {
-    id: 2,
-    title: "Countdown",
-    titleEn: "Countdown",
-    description: `<p>Este é um projeto clássico que cria uma contagem regressiva à partir de dados mockados no programa, mas como existe um foco especial no Front-End, ele conta com a possibilidade do usuário poder personalizar título do evento, data, tema, imagem de fundo a partir de uma url.</p>
-    <p>Foram utilizados diversos hooks neste projeto bem como a utilização do RouterDOM, da ContextAPI além de custos looks.</p>
-    <p>Como diferencial e incremento do projeto, o próximo passo é adicionar a funcionalidade à Local Storage para que os dados persistam no navegador do usuário e não se percam no fechamento da página.</p>`,
-    descriptionEn: `<p>This is a classic project that creates a countdown based on mocked data in the program, but with a special focus on Front-End, it allows the user to customize the event title, date, theme, and background image from a URL.</p>
-    <p>Several hooks were used in this project, as well as the use of RouterDOM, ContextAPI, and custom hooks. </p>
-    <p>As an enhancement, the next step is to add functionality to Local Storage so that the data persists in the user's browser and doesn't get lost when the page is closed.</p>
-    `,
-    icons: {
-      html: true,
-      css: true,
-      javascript: true,
-      react: true,
-    },
-    thumb: "project-countdown.jpg",
-    projectURL: prefix + "countdown",
-    githubURL: "https://github.com/victormerseguel/countdown_react",
-  },
+  // {
+  //   id: 2,
+  //   title: "Countdown",
+  //   titleEn: "Countdown",
+  //   description: `<p>Este é um projeto clássico que cria uma contagem regressiva à partir de dados mockados no programa, mas como existe um foco especial no Front-End, ele conta com a possibilidade do usuário poder personalizar título do evento, data, tema, imagem de fundo a partir de uma url.</p>
+  //   <p>Foram utilizados diversos hooks neste projeto bem como a utilização do RouterDOM, da ContextAPI além de custos looks.</p>
+  //   <p>Como diferencial e incremento do projeto, o próximo passo é adicionar a funcionalidade à Local Storage para que os dados persistam no navegador do usuário e não se percam no fechamento da página.</p>`,
+  //   descriptionEn: `<p>This is a classic project that creates a countdown based on mocked data in the program, but with a special focus on Front-End, it allows the user to customize the event title, date, theme, and background image from a URL.</p>
+  //   <p>Several hooks were used in this project, as well as the use of RouterDOM, ContextAPI, and custom hooks. </p>
+  //   <p>As an enhancement, the next step is to add functionality to Local Storage so that the data persists in the user's browser and doesn't get lost when the page is closed.</p>
+  //   `,
+  //   icons: {
+  //     html: true,
+  //     css: true,
+  //     javascript: true,
+  //     react: true,
+  //   },
+  //   thumb: "project-countdown.jpg",
+  //   projectURL: prefix + "countdown",
+  //   githubURL: "https://github.com/victormerseguel/countdown_react",
+  // },
   {
     id: 6,
     title: "Gerador de Senhas",

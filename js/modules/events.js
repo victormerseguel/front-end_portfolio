@@ -150,6 +150,26 @@ const languageSelection = () => {
 
 languageSelection();
 
+const resumeUpdateLanguage = () => {
+  const resumeBtn1 = document.querySelector(
+    ".nav-buttons button:nth-of-type(3) a"
+  );
+  const resumeBtn2 = document.querySelector(
+    ".contact-buttons button:nth-of-type(3) a"
+  );
+
+  const resumeFile = language.includes("pt")
+    ? "./assets/resume_front-end.pdf"
+    : "./assets/resume_front-end__english.pdf";
+
+  const updateResumeLink = (button) => {
+    button.href = resumeFile;
+  };
+
+  updateResumeLink(resumeBtn1);
+  updateResumeLink(resumeBtn2);
+};
+
 export const handleLanguage = (e) => {
   let currentButton = document.querySelector(".current");
   let currentSliced;
@@ -174,6 +194,7 @@ export const handleLanguage = (e) => {
 
   languageSelection();
   titleChange();
+  resumeUpdateLanguage();
 };
 
 // COPY MAIL -----------------------------------------------------------------
