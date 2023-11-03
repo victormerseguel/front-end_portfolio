@@ -660,12 +660,26 @@ nav span,
 }
 
 #contact {
-  top: 0;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  top: 0px;
+  margin: auto;
+  overflow: scroll;
+}
+
+@media (max-height: 890px) {
+  #contact {
+    height: 810px;
+  }
 }
 
 .contact-container {
   margin: 0 10px;
+  width: 500px;
+  z-index: 3;
 }
 .contact-buttons {
   justify-content: center;
